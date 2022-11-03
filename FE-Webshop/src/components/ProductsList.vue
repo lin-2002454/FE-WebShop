@@ -6,7 +6,7 @@
       <br/>
       {{ ProductPrice }} euro
       <br/>
-      {{ ProductQuantity}}
+      Quantity:{{ ProductQuantity}}
       <br/>
       {{ ProductImage}}
       <br/>
@@ -37,7 +37,14 @@
     
    
     <style scoped>
-    
+    .ProductList {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-style:double;
+    border-color: palevioletred;
+  }
     </style>
     
 

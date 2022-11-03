@@ -1,6 +1,11 @@
 <template >
+  
+  <div class="foto">
+    <img alt="foto" src="@/assets/FashionFoto1.jpg" width="1000"  />
+    </div>
   <div class="HomePage">
-    <div v-for="product in products" v-bind:key="product.productId">
+    
+    <div class="Productlist" v-for="product in products" v-bind:key="product.productId">
       
       <ProductList
         :ProductTitle="product.productTitle"
@@ -21,10 +26,12 @@
 import ProductList from '../components/ProductsList.vue'
 
 
+
 export default {
   name: 'Home',
   components: {
     ProductList
+    
 },
   data() {
     return {
@@ -63,6 +70,19 @@ export default {
 </script>
 
 <style scoped>
+.HomePage{
+  margin-top: 0px;
+  
+}
+.Productlist{
+  margin-top: 10rem;
+}
+.foto {
+  margin-top: 10rem;
+ margin-right: 10rem;
+}
+
+
 
 </style>
 
