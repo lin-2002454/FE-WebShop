@@ -1,11 +1,11 @@
 <template >
+   
   
-  <div class="foto">
-    <img alt="foto" src="@/assets/FashionFoto1.jpg" width="1000"  />
-    </div>
-  <div class="HomePage">
-    
-    <div class="Productlist" v-for="product in products" v-bind:key="product.productId">
+  <div class="container-fluid">
+
+    <img class="img-fluid vw-100" alt="foto" src="@/assets/FashionFoto1.jpg"  />
+    <div class="row mt-4">
+      <div class="col-sm-4" v-for="product in products" v-bind:key="product.productId">
       
       <ProductList
         :ProductTitle="product.productTitle"
@@ -18,7 +18,24 @@
         
       />
     </div>
+    </div>
   </div>
+  <!--<div class="HomePage">
+ 
+    <div v-for="product in products" v-bind:key="product.productId">
+      
+      <ProductList
+        :ProductTitle="product.productTitle"
+        :ProductDescription="product.productDescription"
+        :ProductPrice="product.productPrice"
+        :ProductQuantity="product.productQuantity"
+        :ProductImage="product.productImage"
+        :ProductSize="product.productSize"
+        :ProductId="product.productId"
+        
+      />
+    </div>
+  </div> -->
 
 </template>
 
@@ -70,17 +87,9 @@ export default {
 </script>
 
 <style scoped>
-.HomePage{
-  margin-top: 0px;
-  
-}
-.Productlist{
-  margin-top: 10rem;
-}
-.foto {
-  margin-top: 10rem;
- margin-right: 10rem;
-}
+
+
+
 
 
 
