@@ -18,6 +18,7 @@
 <template>
         <a class="card mb-4 text-decoration-none text-black styled-card" :href="'/products/' + ProductId">
           <button class="btn btn-warning " type="submit" href="'/products/' + ProductId">more info>></button>
+          
           <div class="card-body">
             <h5 class="card-title">{{ProductTitle}}</h5>
             <div class="card-text">
