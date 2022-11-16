@@ -55,7 +55,7 @@
     
 <template>
     <div>
-        <h2>Add new retailer</h2>
+        <h2>Add new product</h2>
         <form v-on:submit.prevent="postProduct()">
             <div class="form-group">
                 <label for="productTitle">ProductTitle</label>
@@ -90,9 +90,14 @@
                 <input type="text" class="form-control" id="productSize" placeholder="productSize"
                     v-model="form.productSize" />
             </div>
+            <br />
             <div class="form-group">
-                <button id="post" class="post">Create retailer</button>
+                <button id="post" class="btn btn-outline-dark">Create retailer</button>
+                <router-link to="/Productsadmin">
+                    <button id="cancel" style="margin-left:10px;" class="btn btn-outline-dark">Cancel</button>
+                </router-link>
             </div>
+
         </form>
     </div>
 </template>
@@ -118,7 +123,7 @@ export default {
     methods: {
         postProduct() {
             const product = {
-             
+
                 "productTitle": "kl",
                 "productDescription": "kl",
                 "productPrice": 2,

@@ -31,7 +31,7 @@
           <a class="nav-link" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/productscrud">Products</a>
+          <a class="nav-link" href="/productsadmin">Products</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

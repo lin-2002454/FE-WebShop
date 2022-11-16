@@ -1,16 +1,16 @@
 <template>
     
       <div class="card-body" style=" margin-top: 40px; margin-left:20px" >
-        <h5 class="card-title">{{product.productTitle}}</h5>
+        <h5 class="card-title"> Producttitle: {{product.productTitle}}</h5>
         <div class="card-text">
-          <p class="text-truncate">{{product.productDescription}}</p>
-          <P class="text-truncate">Quantity:{{product.productQuantity}} </P>
-          <P class="text-truncate">{{product.productImage}} </P>
-          <P class="text-truncate"> Size: {{product.productSize}} </P>
-          <p class="fw-bold">{{product.productPrice }},-</p>
+          <p class="text-truncate"> Productdescription: {{product.productDescription}}</p>
+          <P class="text-truncate"> Productquantity: {{product.productQuantity}} </P>
+          <P class="text-truncate"> Productimage: {{product.productImage}} </P>
+          <P class="text-truncate"> Productsize: {{product.productSize}} </P>
+          <p class="fw-bold"> Productprice: {{product.productPrice }},-</p>
          <!-- <button class="btn btn-warning " type="submit" href="`/productDetails/${ProductId}">more info>></button> -->
          
-         <button class="btn btn-warning">
+         <button class="btn btn-outline-dark">
             <a class="nav-link active" aria-current="page" href="/">Back to homepage</a>
          </button>
         </div>

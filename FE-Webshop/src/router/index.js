@@ -28,7 +28,7 @@ const router = createRouter({
       component: () => import('../views/ProductDetails.vue')
     },
     {
-      path: '/productscrud',
+      path: '/productsadmin',
       name: 'products',
       component: () => import('../views/Products.vue')
     },
@@ -37,6 +37,16 @@ const router = createRouter({
       path:'/Addproduct',
       name: 'Addproduct',
       component: () => import('../views/ProductsCrud/AddProduct.vue')
+    },
+    {
+      path:'/Editproduct/:PId',
+      name: 'Editproduct',
+      component: () => import('../views/ProductsCrud/EditProduct.vue')
+    },
+    {
+      path:'/Deleteproduct/:PId',
+      name: 'Deleteproduct',
+      component: () => import('../views/ProductsCrud/DeleteProduct.vue')
     }
     
   ]
