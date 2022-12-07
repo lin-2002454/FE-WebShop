@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: HomeView
     },
@@ -28,7 +28,7 @@ const router = createRouter({
       component: () => import('../views/ProductDetails.vue')
     },
     {
-      path: '/productsadmin',
+      path: '/',
       name: 'products',
       component: () => import('../views/Products.vue')
     },
@@ -47,7 +47,13 @@ const router = createRouter({
       path:'/Deleteproduct/:PId',
       name: 'Deleteproduct',
       component: () => import('../views/ProductsCrud/DeleteProduct.vue')
+    },
+    {
+      path:'/logout',
+      name: 'logout',
+      component: () => import('../views/Logout.vue')
     }
+    
     
   ]
 })
