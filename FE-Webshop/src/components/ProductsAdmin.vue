@@ -10,7 +10,6 @@
           <P class="text-truncate">{{ProductImage}} </P>
           <P class="text-truncate"> Size: {{ProductSize}} </P>
           <p class="fw-bold">{{ProductPrice }},-</p>
-         <!-- <button class="btn btn-warning " type="submit" href="`/productDetails/${ProductId}">more info>></button> -->
             <Router-link :to="`/Editproduct/${ProductId}`">
             <button id="editproduct" class="btn btn-outline-dark">Edit product</button>
             </Router-link>
