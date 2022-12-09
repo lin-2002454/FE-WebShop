@@ -1,5 +1,27 @@
 <template >
-  <div class="HomePage">
+   
+  
+  <div class="container-fluid">
+
+    <img class="img-fluid vw-100" alt="foto" src="@/assets/FashionFoto1.jpg"  />
+    <div class="row mt-4">
+      <div class="col-sm-4" v-for="product in products" v-bind:key="product.productId">
+      
+      <ProductList
+        :ProductTitle="product.productTitle"
+        :ProductDescription="product.productDescription"
+        :ProductPrice="product.productPrice"
+        :ProductQuantity="product.productQuantity"
+        :ProductImage="product.productImage"
+        :ProductSize="product.productSize"
+        :ProductId="product.productId"
+        
+      />
+    </div>
+    </div>
+  </div>
+  <!--<div class="HomePage">
+ 
     <div v-for="product in products" v-bind:key="product.productId">
       
       <ProductList
@@ -13,7 +35,7 @@
         
       />
     </div>
-  </div>
+  </div> -->
 
 </template>
 
@@ -21,10 +43,12 @@
 import ProductList from '../components/ProductsList.vue'
 
 
+
 export default {
   name: 'Home',
   components: {
     ProductList
+    
 },
   data() {
     return {
@@ -63,6 +87,11 @@ export default {
 </script>
 
 <style scoped>
+
+
+
+
+
 
 </style>
 
