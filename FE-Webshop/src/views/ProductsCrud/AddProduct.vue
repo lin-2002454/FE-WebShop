@@ -92,7 +92,7 @@
             </div>
             <br />
             <div class="form-group">
-                <button id="post" class="btn btn-outline-dark">Create retailer</button>
+                <button id="post" class="btn btn-outline-dark">Create product</button>
                 <router-link to="/Productsadmin">
                     <button id="cancel" style="margin-left:10px;" class="btn btn-outline-dark">Cancel</button>
                 </router-link>
